@@ -1,10 +1,14 @@
 ===
+THIS IS A NEXT.JS Project
+===
+
+===
 
 # DESCRIPTION
 
 ---
 
-
+This is Rick Dingwall's Photography website.
 
 ===
 
@@ -12,7 +16,7 @@
 
 ---
 
-Demo: PUT_SITE_URL_HERE
+Demo: https://legendary-cajeta-7dc787.netlify.app/
 
 ===
 
@@ -20,12 +24,12 @@ Demo: PUT_SITE_URL_HERE
 
 ---
 
-## Started Developement - 
+## Started Developement - 5/4/2023
 
-## Ended Development -
+## Ended Development - N/A
 
 ## Status
 
-PUT_NETLIFY_STATUS_CODE_HERE
+[![Netlify Status](https://api.netlify.com/api/v1/badges/df628ea1-0dfe-403e-929e-773974912f6a/deploy-status)](https://app.netlify.com/sites/legendary-cajeta-7dc787/deploys)
 
 ===
