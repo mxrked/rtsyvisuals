@@ -1,0 +1,5 @@
+$BlackSqueeze: #F0F5F9;
+$Geyser: #C9D6DF;
+$ShuttleGray: #52616B;
+$Shark: #1E2022;
+$WildSand: #F6F6F6;
