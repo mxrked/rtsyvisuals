@@ -152,4 +152,9 @@ select {
 
 .hide-page {
   opacity: 0 !important;
+}
+
+.test-box {
+  height: 600px;
+  background-color: black;
 }/*# sourceMappingURL=resets.css.map */
