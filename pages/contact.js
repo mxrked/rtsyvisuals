@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 // Library Imports
 
 // Data/Functions/Images Imports
+import { TriggerExitAnimations } from "@/assets/functions/dom/triggers/TriggerExitAnimations";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/All/PageHead";
@@ -17,6 +18,11 @@ import "../assets/styles/modules/Contact/Contact.module.css";
 
 export default function Contact() {
   const router = useRouter();
+
+  // Exit Animations trigger
+  useEffect(() => {
+    TriggerExitAnimations();
+  }, []);
 
   return (
     <div id="PAGE" className="page overrides_Contact">
