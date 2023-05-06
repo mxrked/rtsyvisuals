@@ -33,6 +33,11 @@ const BG_BLACKLIGHT_12 = CDNBGReturn("blacklights", "blacklight (12)", "webp");
 const BG_BLACKLIGHT_13 = CDNBGReturn("blacklights", "blacklight (13)", "webp");
 const BG_BLACKLIGHT_14 = CDNBGReturn("blacklights", "blacklight (14)", "webp");
 const BG_BLACKLIGHT_15 = CDNBGReturn("blacklights", "blacklight (15)", "webp");
+const BG_BLACKLIGHT_16 = CDNBGReturn("blacklights", "blacklight (16)", "webp");
+const BG_BLACKLIGHT_17 = CDNBGReturn("blacklights", "blacklight (17)", "webp");
+const BG_BLACKLIGHT_18 = CDNBGReturn("blacklights", "blacklight (18)", "webp");
+const BG_BLACKLIGHT_19 = CDNBGReturn("blacklights", "blacklight (19)", "webp");
+const BG_BLACKLIGHT_20 = CDNBGReturn("blacklights", "blacklight (20)", "webp");
 
 const BG_PORTRAIT_1 = CDNBGReturn("portraits", "portrait (1)", "webp");
 const BG_PORTRAIT_2 = CDNBGReturn("portraits", "portrait (2)", "webp");
@@ -82,6 +87,20 @@ const BG_PORTRAIT_45 = CDNBGReturn("portraits", "portrait (45)", "webp");
 const BG_PORTRAIT_46 = CDNBGReturn("portraits", "portrait (46)", "webp");
 const BG_PORTRAIT_47 = CDNBGReturn("portraits", "portrait (47)", "webp");
 const BG_PORTRAIT_48 = CDNBGReturn("portraits", "portrait (48)", "webp");
+const BG_PORTRAIT_49 = CDNBGReturn("portraits", "portrait (49)", "webp");
+const BG_PORTRAIT_50 = CDNBGReturn("portraits", "portrait (50)", "webp");
+const BG_PORTRAIT_51 = CDNBGReturn("portraits", "portrait (51)", "webp");
+const BG_PORTRAIT_52 = CDNBGReturn("portraits", "portrait (52)", "webp");
+const BG_PORTRAIT_53 = CDNBGReturn("portraits", "portrait (53)", "webp");
+const BG_PORTRAIT_54 = CDNBGReturn("portraits", "portrait (54)", "webp");
+const BG_PORTRAIT_55 = CDNBGReturn("portraits", "portrait (55)", "webp");
+const BG_PORTRAIT_56 = CDNBGReturn("portraits", "portrait (56)", "webp");
+const BG_PORTRAIT_57 = CDNBGReturn("portraits", "portrait (57)", "webp");
+const BG_PORTRAIT_58 = CDNBGReturn("portraits", "portrait (58)", "webp");
+const BG_PORTRAIT_59 = CDNBGReturn("portraits", "portrait (59)", "webp");
+const BG_PORTRAIT_60 = CDNBGReturn("portraits", "portrait (60)", "webp");
+const BG_PORTRAIT_61 = CDNBGReturn("portraits", "portrait (61)", "webp");
+const BG_PORTRAIT_62 = CDNBGReturn("portraits", "portrait (62)", "webp");
 
 const BG_PROJECTION_1 = CDNBGReturn("projections", "projection (1)", "webp");
 const BG_PROJECTION_2 = CDNBGReturn("projections", "projection (2)", "webp");
@@ -110,6 +129,11 @@ export {
   BG_BLACKLIGHT_13,
   BG_BLACKLIGHT_14,
   BG_BLACKLIGHT_15,
+  BG_BLACKLIGHT_16,
+  BG_BLACKLIGHT_17,
+  BG_BLACKLIGHT_18,
+  BG_BLACKLIGHT_19,
+  BG_BLACKLIGHT_20,
 };
 export {
   BG_PORTRAIT_1,
@@ -160,6 +184,20 @@ export {
   BG_PORTRAIT_46,
   BG_PORTRAIT_47,
   BG_PORTRAIT_48,
+  BG_PORTRAIT_49,
+  BG_PORTRAIT_50,
+  BG_PORTRAIT_51,
+  BG_PORTRAIT_52,
+  BG_PORTRAIT_53,
+  BG_PORTRAIT_54,
+  BG_PORTRAIT_55,
+  BG_PORTRAIT_56,
+  BG_PORTRAIT_57,
+  BG_PORTRAIT_58,
+  BG_PORTRAIT_59,
+  BG_PORTRAIT_60,
+  BG_PORTRAIT_61,
+  BG_PORTRAIT_62,
 };
 export {
   BG_PROJECTION_1,
