@@ -5,7 +5,7 @@
  */
 
 import DeclareStorageVariable from "../../data/storage/DeclareStorageVariable";
-// import CloseMobileNavMenu from "../closers/CloseMobileNavMenu";
+import CloseMobileNav from "../closers/CloseMobileNav";
 // import CloseSearch from "../closers/CloseSearch";
 
 function TriggerExitAnimations() {
@@ -49,7 +49,7 @@ function TriggerExitAnimations() {
         DeclareStorageVariable("session", "HREF", link.href);
 
         // Closing the mobile nav and search
-        // CloseMobileNavMenu();
+        CloseMobileNav();
         // CloseSearch();
 
         // Disabling pointer events and scrolling
