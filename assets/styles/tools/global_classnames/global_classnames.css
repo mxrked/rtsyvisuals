@@ -1,1 +1,7 @@
-/*# sourceMappingURL=global_classnames.css.map */
+.full-second {
+  transition: 1s ease-in-out;
+}
+
+.half-second {
+  transition: 0.5s ease-in-out;
+}/*# sourceMappingURL=global_classnames.css.map */
