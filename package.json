@@ -2,7 +2,7 @@
   "name": "rtsyvisuals",
   "version": "0.1.0",
   "private": true,
-  "homepage": https://legendary-cajeta-7dc787.netlify.app/,
+  "homepage": "https://legendary-cajeta-7dc787.netlify.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
