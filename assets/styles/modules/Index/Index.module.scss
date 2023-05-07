@@ -22,12 +22,111 @@
 }
 
 // Desktop
+.index_top {
+  height: 1100px;
+  width: 100%;
+  position: relative;
+
+  .bg {
+    width: 100%;
+    height: 1100px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 20%;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    @include displayElement(flex, center, center);
+    text-align: center;
+
+    .overlay_cnt {
+      position: relative;
+      top: -10px;
+
+      h1 {
+        font-family: "Montserrat Bold";
+        color: $WildSand;
+        font-size: $Heading;
+      }
+
+      .small_text {
+        font-family: "Montserrat Semibold";
+        color: $WildSand;
+        font-size: $Text;
+        margin-top: 25px;
+        margin-bottom: 45px;
+        display: block;
+        text-transform: uppercase;
+      }
+
+      .links {
+        @include displayElement(flex, space-evenly, center);
+        max-width: 350px;
+        @include quickCenter("relative");
+
+        a {
+          height: 45px;
+          background-color: $Shark;
+          width: 100%;
+          max-width: 120px;
+          @include displayElement(flex, center, center);
+          font-family: "Montserrat Medium";
+          color: $WildSand;
+          text-decoration: none;
+          border: 1px solid rgba(255, 255, 255, 0.067);
+          font-size: 17px;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: $ShuttleGray;
+            // color: $Shark;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {
 }
 
 @media all and (max-width: 991px) {
+  .index_top {
+    height: 800px;
+
+    .bg {
+      height: 800px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        h1 {
+          font-size: 40px;
+        }
+
+        .small_text {
+          font-size: 20px;
+        }
+
+        .links {
+          display: inline-block;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 110px;
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -35,30 +134,327 @@
 
 // Desktop Window (Smallest)
 @media all and (max-width: 768px) {
+  .index_top {
+    height: 600px;
+
+    .bg {
+      height: 600px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        top: 20px;
+
+        h1 {
+          font-size: 32px;
+        }
+
+        .small_text {
+          font-size: 17px;
+        }
+
+        .links {
+          display: inline-block;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 90px;
+            width: 90px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Smaller Devices (Phones)
 @media all and (max-width: 419px) {
+  .index_top {
+    height: 500px;
+
+    .bg {
+      height: 500px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        top: 35px;
+
+        h1 {
+          font-size: 23px;
+          max-width: 230px;
+          @include quickCenter("relative");
+        }
+
+        .small_text {
+          font-size: 15px;
+          max-width: 250px;
+          @include quickCenter("relative");
+        }
+
+        .links {
+          display: flex;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 90px;
+            width: 90px;
+            height: 40px;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Pixel 2 XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .index_top {
+    height: 320px;
+
+    .bg {
+      height: 320px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        top: 40px;
+
+        h1 {
+          font-size: 27px;
+          max-width: 500px;
+        }
+
+        .small_text {
+          margin-top: 15px;
+          margin-bottom: 25px;
+          font-size: 13px;
+          max-width: 500px;
+        }
+
+        .links {
+          display: flex;
+          max-width: 240px;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 80px;
+            width: 80px;
+            font-size: 13px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Ipad
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 620px;
+
+    .bg {
+      height: 620px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        top: 20px;
+
+        h1 {
+          font-size: 37px;
+          max-width: 500px;
+        }
+
+        .small_text {
+          margin-top: 15px;
+          margin-bottom: 35px;
+          font-size: 19px;
+          max-width: 500px;
+        }
+
+        .links {
+          display: flex;
+          max-width: 240px;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 95px;
+            width: 95px;
+            font-size: 15px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 420px;
+
+    .bg {
+      height: 420px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        top: 40px;
+
+        h1 {
+          font-size: 35px;
+          max-width: 500px;
+        }
+
+        .small_text {
+          margin-top: 15px;
+          margin-bottom: 35px;
+          font-size: 15px;
+          max-width: 500px;
+        }
+
+        .links {
+          display: flex;
+          max-width: 240px;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 95px;
+            width: 95px;
+            font-size: 15px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // iPad Pro
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .index_top {
+    height: 720px;
+
+    .bg {
+      height: 720px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        top: 30px;
+
+        h1 {
+          font-size: 42px;
+          max-width: 500px;
+        }
+
+        .small_text {
+          margin-top: 15px;
+          margin-bottom: 35px;
+          font-size: 18px;
+          max-width: 500px;
+        }
+
+        .links {
+          display: flex;
+          max-width: 240px;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 95px;
+            width: 95px;
+            font-size: 15px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .index_top {
+    height: 620px;
+
+    .bg {
+      height: 620px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        top: 30px;
+
+        h1 {
+          font-size: 42px;
+          max-width: 500px;
+        }
+
+        .small_text {
+          margin-top: 15px;
+          margin-bottom: 35px;
+          font-size: 18px;
+          max-width: 500px;
+        }
+
+        .links {
+          display: flex;
+          max-width: 240px;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 95px;
+            width: 95px;
+            font-size: 15px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Laptops
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 720px;
+
+    .bg {
+      height: 720px !important;
+    }
+
+    .overlay {
+      .overlay_cnt {
+        top: 30px;
+
+        h1 {
+          font-size: 46px;
+          max-width: 600px;
+        }
+
+        .small_text {
+          margin-top: 15px;
+          margin-bottom: 35px;
+          font-size: 21px;
+          max-width: 500px;
+        }
+
+        .links {
+          display: flex;
+          max-width: 240px;
+
+          a {
+            margin-bottom: 20px;
+            max-width: 95px;
+            width: 95px;
+            font-size: 15px;
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
 }

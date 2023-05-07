@@ -13,4 +13,346 @@
 @font-face {
   font-family: "Montserrat Bold";
   src: url("../../../fonts/Montserrat-Bold.ttf");
+}
+.index_top {
+  height: 1100px;
+  width: 100%;
+  position: relative;
+}
+.index_top .bg {
+  width: 100%;
+  height: 1100px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 20%;
+}
+.index_top .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.index_top .overlay .overlay_cnt {
+  position: relative;
+  top: -10px;
+}
+.index_top .overlay .overlay_cnt h1 {
+  font-family: "Montserrat Bold";
+  color: #f6f6f6;
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+}
+.index_top .overlay .overlay_cnt .small_text {
+  font-family: "Montserrat Semibold";
+  color: #f6f6f6;
+  font-size: clamp(1.7rem, 0.86vw + 1.6rem, 1.7rem);
+  margin-top: 25px;
+  margin-bottom: 45px;
+  display: block;
+  text-transform: uppercase;
+}
+.index_top .overlay .overlay_cnt .links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.index_top .overlay .overlay_cnt .links a {
+  height: 45px;
+  background-color: #1e2022;
+  width: 100%;
+  max-width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat Medium";
+  color: #f6f6f6;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.067);
+  font-size: 17px;
+  border-radius: 5px;
+}
+.index_top .overlay .overlay_cnt .links a:hover {
+  background-color: #52616b;
+}
+
+@media all and (max-width: 991px) {
+  .index_top {
+    height: 800px;
+  }
+  .index_top .bg {
+    height: 800px !important;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 40px;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    font-size: 20px;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: inline-block;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 110px;
+    width: 110px;
+  }
+}
+@media all and (max-width: 768px) {
+  .index_top {
+    height: 600px;
+  }
+  .index_top .bg {
+    height: 600px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: 20px;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 32px;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    font-size: 17px;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: inline-block;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 90px;
+    width: 90px;
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 419px) {
+  .index_top {
+    height: 500px;
+  }
+  .index_top .bg {
+    height: 500px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: 35px;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 23px;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    font-size: 15px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: flex;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 90px;
+    width: 90px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .index_top {
+    height: 320px;
+  }
+  .index_top .bg {
+    height: 320px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: 40px;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 27px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 13px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: flex;
+    max-width: 240px;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 80px;
+    width: 80px;
+    font-size: 13px;
+    height: 40px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 620px;
+  }
+  .index_top .bg {
+    height: 620px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: 20px;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 37px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 19px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: flex;
+    max-width: 240px;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 95px;
+    width: 95px;
+    font-size: 15px;
+    height: 45px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 420px;
+  }
+  .index_top .bg {
+    height: 420px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: 40px;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 35px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: flex;
+    max-width: 240px;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 95px;
+    width: 95px;
+    font-size: 15px;
+    height: 45px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .index_top {
+    height: 720px;
+  }
+  .index_top .bg {
+    height: 720px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: 30px;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 42px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: flex;
+    max-width: 240px;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 95px;
+    width: 95px;
+    font-size: 15px;
+    height: 45px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .index_top {
+    height: 620px;
+  }
+  .index_top .bg {
+    height: 620px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: 30px;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 42px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: flex;
+    max-width: 240px;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 95px;
+    width: 95px;
+    font-size: 15px;
+    height: 45px;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 720px;
+  }
+  .index_top .bg {
+    height: 720px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: 30px;
+  }
+  .index_top .overlay .overlay_cnt h1 {
+    font-size: 46px;
+    max-width: 600px;
+  }
+  .index_top .overlay .overlay_cnt .small_text {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 21px;
+    max-width: 500px;
+  }
+  .index_top .overlay .overlay_cnt .links {
+    display: flex;
+    max-width: 240px;
+  }
+  .index_top .overlay .overlay_cnt .links a {
+    margin-bottom: 20px;
+    max-width: 95px;
+    width: 95px;
+    font-size: 15px;
+    height: 45px;
+  }
 }/*# sourceMappingURL=Index.module.css.map */
