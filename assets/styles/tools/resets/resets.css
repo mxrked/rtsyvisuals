@@ -109,6 +109,23 @@ section {
 body {
   overflow-y: hidden;
   pointer-events: none;
+  scrollbar-color: #1e2022 #c9d6df;
+  scrollbar-width: thin;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: #c9d6df;
+}
+body::-webkit-scrollbar-thumb {
+  background: #1e2022;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #52616b;
 }
 
 ol,
@@ -152,9 +169,4 @@ select {
 
 .hide-page {
   opacity: 0 !important;
-}
-
-.test-box {
-  height: 600px;
-  background-color: black;
 }/*# sourceMappingURL=resets.css.map */
