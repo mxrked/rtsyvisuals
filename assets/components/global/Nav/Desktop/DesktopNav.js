@@ -12,6 +12,7 @@ import { useInView } from "react-intersection-observer";
 import { FaSearch, FaSignOutAlt } from "react-icons/fa";
 
 import { FADE_IN } from "@/assets/animations/FADES";
+import ToggleSearch from "@/assets/functions/dom/togglers/ToggleSearch";
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
 
 import styles from "../../../../styles/modules/Nav/Nav.module.css";
@@ -110,6 +111,9 @@ export const DesktopNav = () => {
                   </div>
                   <button
                     className={`${styles.search_toggler} search-toggler half-second`}
+                    onClick={() => {
+                      ToggleSearch();
+                    }}
                   >
                     <FaSearch className={`${styles.icon}`} />
                   </button>

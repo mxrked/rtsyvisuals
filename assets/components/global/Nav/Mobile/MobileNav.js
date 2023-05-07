@@ -16,6 +16,7 @@ import { FADE_IN } from "@/assets/animations/FADES";
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
 import Display1Of2 from "@/assets/functions/dom/displays/Display1Of2";
 import ToggleMobileNav from "@/assets/functions/dom/togglers/ToggleMobileNav";
+import ToggleSearch from "@/assets/functions/dom/togglers/ToggleSearch";
 
 import styles from "../../../../styles/modules/Nav/Nav.module.css";
 
@@ -109,6 +110,9 @@ export const MobileNav = () => {
                   </div>
                   <button
                     className={`${styles.search_toggler} search-toggler half-second`}
+                    onClick={() => {
+                      ToggleSearch();
+                    }}
                   >
                     <FaSearch className={`${styles.icon}`} />
                   </button>
