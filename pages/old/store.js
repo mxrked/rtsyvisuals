@@ -15,7 +15,7 @@ import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMe
 import { Search } from "@/assets/components/global/Nav/Both/Search";
 
 // Style Imports
-import "../assets/styles/modules/Store/Store.module.css";
+import "../../assets/styles/modules/old/Store/Store.module.css";
 
 export default function Store() {
   const router = useRouter();
