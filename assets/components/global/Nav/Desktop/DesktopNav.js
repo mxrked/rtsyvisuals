@@ -85,11 +85,11 @@ export const DesktopNav = () => {
                         <span>Services</span>
                       </a>
                     </li>
-                    <li>
+                    {/** <li>
                       <a href="/store" className="store-link half-second">
                         <span>Store</span>
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="/contact" className="contact-link half-second">
                         <span>Contact</span>
