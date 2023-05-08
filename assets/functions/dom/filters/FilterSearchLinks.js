@@ -6,12 +6,13 @@
 
 import {
   INDEX_KWS,
-  STORE_KWS,
+  // STORE_KWS,
   SERVICES_KWS,
   PORTFOLIO_KWS,
   PORTRAIT_KWS,
   BLACKLIGHT_KWS,
-  PROJECTION_KWS,
+  BOUDOIR_KWS,
+  // PROJECTION_KWS,
   INFO_KWS,
   CONTACT_KWS,
 } from "../../../data/variables/ARRAYS";
@@ -53,8 +54,9 @@ export default function FilterSearchLinks() {
   DisplaySearchLinkBasedOnKWS(PORTFOLIO_KWS, SEARCH_LINK[2]);
   DisplaySearchLinkBasedOnKWS(SERVICES_KWS, SEARCH_LINK[3]);
   DisplaySearchLinkBasedOnKWS(PORTRAIT_KWS, SEARCH_LINK[4]);
-  DisplaySearchLinkBasedOnKWS(PROJECTION_KWS, SEARCH_LINK[5]);
+  DisplaySearchLinkBasedOnKWS(BOUDOIR_KWS, SEARCH_LINK[5]);
+  // DisplaySearchLinkBasedOnKWS(PROJECTION_KWS, SEARCH_LINK[5]);
   DisplaySearchLinkBasedOnKWS(BLACKLIGHT_KWS, SEARCH_LINK[6]);
-  DisplaySearchLinkBasedOnKWS(STORE_KWS, SEARCH_LINK[7]);
-  DisplaySearchLinkBasedOnKWS(CONTACT_KWS, SEARCH_LINK[8]);
+  // DisplaySearchLinkBasedOnKWS(STORE_KWS, SEARCH_LINK[7]);
+  DisplaySearchLinkBasedOnKWS(CONTACT_KWS, SEARCH_LINK[7]);
 }
