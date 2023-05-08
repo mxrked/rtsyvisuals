@@ -96,12 +96,20 @@ export const Search = () => {
               <span>Portraits</span>
             </a>
           </li>
-          <li>
+          {/***  <li>
             <a
               href="/services#projections"
               className="services-link search-link half-second"
             >
               <span>Projections</span>
+            </a>
+          </li> */}
+          <li>
+            <a
+              href="/services#boudoir"
+              className="services-link search-link half-second"
+            >
+              <span>Boudoirs</span>
             </a>
           </li>
           <li>
@@ -112,11 +120,11 @@ export const Search = () => {
               <span>Blacklights</span>
             </a>
           </li>
-          <li>
+          {/** <li>
             <a href="/store" className="store-link search-link half-second">
               <span>Store</span>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="/contact" className="contact-link search-link half-second">
               <span>Contact</span>
