@@ -63,10 +63,12 @@
                   .top_text {
                     font-family: "Montserrat Bold";
                     font-size: 30px;
+                    // user-select: none;
                   }
                   .bottom_text {
                     font-family: "Montserrat Medium";
                     font-size: 10px;
+                    // user-select: none;
                   }
                 }
               }
@@ -85,7 +87,7 @@
               max-width: 440px;
               @include displayElement(flex, space-between, center);
               font-family: "Montserrat Medium";
-              font-size: $Text;
+              font-size: 15px;
               margin-right: 40px;
               color: $WildSand;
 
@@ -93,6 +95,10 @@
                 a {
                   color: $WildSand;
                   text-decoration: none;
+
+                  span {
+                    // user-select: none;
+                  }
 
                   &:hover {
                     opacity: 0.6;
@@ -127,6 +133,7 @@
               padding-right: 9px;
               font-family: "Montserrat Medium";
               @include displayElement(flex, center, center);
+              font-size: 15px;
               margin-right: 10px;
 
               a {
@@ -135,6 +142,10 @@
                 @include displayElement(flex, center, center);
                 color: $Shark;
                 text-decoration: none;
+
+                span {
+                  // user-select: none;
+                }
               }
 
               &:hover {
@@ -414,6 +425,7 @@
         font-size: 34px;
         font-family: "Montserrat Bold";
         color: $WildSand;
+        // user-select: none;
       }
 
       button {
@@ -445,6 +457,7 @@
         top: 0;
         left: 0;
         font-family: "Montserrat Medium";
+        // user-select: none;
       }
 
       button {
@@ -489,6 +502,10 @@
           left: 0;
           text-decoration: none;
           color: $Shark;
+
+          span {
+            // user-select: none;
+          }
 
           &:hover {
             background-color: $Geyser;

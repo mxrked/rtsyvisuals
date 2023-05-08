@@ -71,7 +71,7 @@
   justify-content: space-between;
   align-items: center;
   font-family: "Montserrat Medium";
-  font-size: clamp(0.8rem, 0.26vw + 0.76rem, 1rem);
+  font-size: 15px;
   margin-right: 40px;
   color: #f6f6f6;
 }
@@ -109,6 +109,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
   margin-right: 10px;
 }
 .desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .login_register_link a {
