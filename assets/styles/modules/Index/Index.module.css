@@ -330,6 +330,8 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .index_info .index_info_box .index_info_row .index_info_R .index_info_side_cnt .socials div {
     font-size: 24px;
