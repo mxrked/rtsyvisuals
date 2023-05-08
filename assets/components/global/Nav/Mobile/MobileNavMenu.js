@@ -67,11 +67,11 @@ export const MobileNavMenu = () => {
                 <span>Services</span>
               </a>
             </li>
-            <li>
+            {/** <li>
               <a href="/store" className="nav-link store-link half-second">
                 <span>Store</span>
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="/contact" className="nav-link contact-link half-second">
                 <span>Contact</span>

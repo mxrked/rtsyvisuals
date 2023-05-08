@@ -56,6 +56,17 @@ export const MobileNav = () => {
       }
     });
   }, [router]);
+  useEffect(() => {
+    const SMALL_SCREEN = "(max-width: 768px)";
+
+    Display1Of2("loginRegisterSpan", "loginRegisterIcon", SMALL_SCREEN);
+
+    if (window.matchMedia(SMALL_SCREEN).matches) {
+      document.getElementById("mobileLoginRegisterLink").style.width = "35px";
+    } else {
+      document.getElementById("mobileLoginRegisterLink").style.width = "125px";
+    }
+  }, []);
 
   return (
     <nav id="mobileNav" className={`${styles.mobile_nav} mobile-nav`}>
