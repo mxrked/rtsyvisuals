@@ -6,12 +6,13 @@
 
 import {
   INDEX_KWS,
-  STORE_KWS,
+  // STORE_KWS,
   SERVICES_KWS,
   PORTFOLIO_KWS,
   PORTRAIT_KWS,
   BLACKLIGHT_KWS,
-  PROJECTION_KWS,
+  BOUDOIR_KWS,
+  // PROJECTION_KWS,
   INFO_KWS,
   CONTACT_KWS,
 } from "../../data/variables/ARRAYS";
@@ -96,8 +97,9 @@ export default function SearchRouting(e, window) {
   RouteBasedOnKWS(e, window, INPUT, PORTFOLIO_KWS, 2, "link");
   RouteBasedOnKWS(e, window, INPUT, SERVICES_KWS, 3, "link");
   RouteBasedOnKWS(e, window, INPUT, PORTRAIT_KWS, 4, "hash");
-  RouteBasedOnKWS(e, window, INPUT, PROJECTION_KWS, 5, "hash");
+  RouteBasedOnKWS(e, window, INPUT, BOUDOIR_KWS, 5, "hash");
+  // RouteBasedOnKWS(e, window, INPUT, PROJECTION_KWS, 5, "hash");
   RouteBasedOnKWS(e, window, INPUT, BLACKLIGHT_KWS, 6, "hash");
-  RouteBasedOnKWS(e, window, INPUT, STORE_KWS, 7, "link");
-  RouteBasedOnKWS(e, window, INPUT, CONTACT_KWS, 8, "link");
+  // RouteBasedOnKWS(e, window, INPUT, STORE_KWS, 7, "link");
+  RouteBasedOnKWS(e, window, INPUT, CONTACT_KWS, 7, "link");
 }
