@@ -10,7 +10,8 @@ import { useRouter } from "next/router";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { BG_PROJECTION_2 } from "@/assets/cdns/CDNBgs";
+// import { BG_PROJECTION_2 } from "@/assets/cdns/CDNBgs";
+import { BG_PORTRAIT_18 } from "@/assets/cdns/CDNBgs";
 
 import { FADE_IN } from "@/assets/animations/FADES";
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
@@ -37,10 +38,12 @@ export const IndexTop = () => {
         variants={FADE_IN}
       >
         <BackgroundImage
-          src={BG_PROJECTION_2}
+          // src={BG_PROJECTION_2}
+          src={BG_PORTRAIT_18}
           className={`${styles.bg}`}
           width="100%"
           height="100%"
+          aria-label="Background image of a woman standing in front of a projection of a blue dragon."
         ></BackgroundImage>
 
         <div className={`${styles.overlay}`}>
