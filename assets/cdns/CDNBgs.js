@@ -102,15 +102,37 @@ const BG_PORTRAIT_60 = CDNBGReturn("portraits", "portrait (60)", "webp");
 const BG_PORTRAIT_61 = CDNBGReturn("portraits", "portrait (61)", "webp");
 const BG_PORTRAIT_62 = CDNBGReturn("portraits", "portrait (62)", "webp");
 
-const BG_PROJECTION_1 = CDNBGReturn("projections", "projection (1)", "webp");
-const BG_PROJECTION_2 = CDNBGReturn("projections", "projection (2)", "webp");
-const BG_PROJECTION_3 = CDNBGReturn("projections", "projection (3)", "webp");
-const BG_PROJECTION_4 = CDNBGReturn("projections", "projection (4)", "webp");
-const BG_PROJECTION_5 = CDNBGReturn("projections", "projection (5)", "webp");
-const BG_PROJECTION_6 = CDNBGReturn("projections", "projection (6)", "webp");
-const BG_PROJECTION_7 = CDNBGReturn("projections", "projection (7)", "webp");
-const BG_PROJECTION_8 = CDNBGReturn("projections", "projection (8)", "webp");
-const BG_PROJECTION_9 = CDNBGReturn("projections", "projection (9)", "webp");
+const BG_BOUDOIR_1 = CDNBGReturn("boudoirs", "boudoir (1)", "webp");
+const BG_BOUDOIR_2 = CDNBGReturn("boudoirs", "boudoir (2)", "webp");
+const BG_BOUDOIR_3 = CDNBGReturn("boudoirs", "boudoir (3)", "webp");
+const BG_BOUDOIR_4 = CDNBGReturn("boudoirs", "boudoir (4)", "webp");
+const BG_BOUDOIR_5 = CDNBGReturn("boudoirs", "boudoir (5)", "webp");
+const BG_BOUDOIR_6 = CDNBGReturn("boudoirs", "boudoir (6)", "webp");
+const BG_BOUDOIR_7 = CDNBGReturn("boudoirs", "boudoir (7)", "webp");
+const BG_BOUDOIR_8 = CDNBGReturn("boudoirs", "boudoir (8)", "webp");
+const BG_BOUDOIR_9 = CDNBGReturn("boudoirs", "boudoir (9)", "webp");
+const BG_BOUDOIR_10 = CDNBGReturn("boudoirs", "boudoir (10)", "webp");
+const BG_BOUDOIR_11 = CDNBGReturn("boudoirs", "boudoir (11)", "webp");
+const BG_BOUDOIR_12 = CDNBGReturn("boudoirs", "boudoir (12)", "webp");
+const BG_BOUDOIR_13 = CDNBGReturn("boudoirs", "boudoir (13)", "webp");
+const BG_BOUDOIR_14 = CDNBGReturn("boudoirs", "boudoir (14)", "webp");
+const BG_BOUDOIR_15 = CDNBGReturn("boudoirs", "boudoir (15)", "webp");
+const BG_BOUDOIR_16 = CDNBGReturn("boudoirs", "boudoir (16)", "webp");
+const BG_BOUDOIR_17 = CDNBGReturn("boudoirs", "boudoir (17)", "webp");
+const BG_BOUDOIR_18 = CDNBGReturn("boudoirs", "boudoir (18)", "webp");
+const BG_BOUDOIR_19 = CDNBGReturn("boudoirs", "boudoir (19)", "webp");
+const BG_BOUDOIR_20 = CDNBGReturn("boudoirs", "boudoir (20)", "webp");
+const BG_BOUDOIR_21 = CDNBGReturn("boudoirs", "boudoir (21)", "webp");
+
+// const BG_PROJECTION_1 = CDNBGReturn("projections", "projection (1)", "webp");
+// const BG_PROJECTION_2 = CDNBGReturn("projections", "projection (2)", "webp");
+// const BG_PROJECTION_3 = CDNBGReturn("projections", "projection (3)", "webp");
+// const BG_PROJECTION_4 = CDNBGReturn("projections", "projection (4)", "webp");
+// const BG_PROJECTION_5 = CDNBGReturn("projections", "projection (5)", "webp");
+// const BG_PROJECTION_6 = CDNBGReturn("projections", "projection (6)", "webp");
+// const BG_PROJECTION_7 = CDNBGReturn("projections", "projection (7)", "webp");
+// const BG_PROJECTION_8 = CDNBGReturn("projections", "projection (8)", "webp");
+// const BG_PROJECTION_9 = CDNBGReturn("projections", "projection (9)", "webp");
 
 export { BG_CAMERA_LENS, BG_GRAYSCALE_CAMERA, BG_GRAYSCALE_VERTICAL_CAMERA };
 export {
@@ -200,13 +222,36 @@ export {
   BG_PORTRAIT_62,
 };
 export {
-  BG_PROJECTION_1,
-  BG_PROJECTION_2,
-  BG_PROJECTION_3,
-  BG_PROJECTION_4,
-  BG_PROJECTION_5,
-  BG_PROJECTION_6,
-  BG_PROJECTION_7,
-  BG_PROJECTION_8,
-  BG_PROJECTION_9,
+  BG_BOUDOIR_1,
+  BG_BOUDOIR_2,
+  BG_BOUDOIR_3,
+  BG_BOUDOIR_4,
+  BG_BOUDOIR_5,
+  BG_BOUDOIR_6,
+  BG_BOUDOIR_7,
+  BG_BOUDOIR_8,
+  BG_BOUDOIR_9,
+  BG_BOUDOIR_10,
+  BG_BOUDOIR_11,
+  BG_BOUDOIR_12,
+  BG_BOUDOIR_13,
+  BG_BOUDOIR_14,
+  BG_BOUDOIR_15,
+  BG_BOUDOIR_16,
+  BG_BOUDOIR_17,
+  BG_BOUDOIR_18,
+  BG_BOUDOIR_19,
+  BG_BOUDOIR_20,
+  BG_BOUDOIR_21,
 };
+// export {
+//   BG_PROJECTION_1,
+//   BG_PROJECTION_2,
+//   BG_PROJECTION_3,
+//   BG_PROJECTION_4,
+//   BG_PROJECTION_5,
+//   BG_PROJECTION_6,
+//   BG_PROJECTION_7,
+//   BG_PROJECTION_8,
+//   BG_PROJECTION_9,
+// };
