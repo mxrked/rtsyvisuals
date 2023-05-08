@@ -84,15 +84,36 @@ import {
   OBJ_PORT_60,
   OBJ_PORT_61,
   OBJ_PORT_62,
-  OBJ_PRO_1,
-  OBJ_PRO_2,
-  OBJ_PRO_3,
-  OBJ_PRO_4,
-  OBJ_PRO_5,
-  OBJ_PRO_6,
-  OBJ_PRO_7,
-  OBJ_PRO_8,
-  OBJ_PRO_9,
+  OBJ_BOUD_1,
+  OBJ_BOUD_2,
+  OBJ_BOUD_3,
+  OBJ_BOUD_4,
+  OBJ_BOUD_5,
+  OBJ_BOUD_6,
+  OBJ_BOUD_7,
+  OBJ_BOUD_8,
+  OBJ_BOUD_9,
+  OBJ_BOUD_10,
+  OBJ_BOUD_11,
+  OBJ_BOUD_12,
+  OBJ_BOUD_13,
+  OBJ_BOUD_14,
+  OBJ_BOUD_15,
+  OBJ_BOUD_16,
+  OBJ_BOUD_17,
+  OBJ_BOUD_18,
+  OBJ_BOUD_19,
+  OBJ_BOUD_20,
+  OBJ_BOUD_21,
+  // OBJ_PRO_1,
+  // OBJ_PRO_2,
+  // OBJ_PRO_3,
+  // OBJ_PRO_4,
+  // OBJ_PRO_5,
+  // OBJ_PRO_6,
+  // OBJ_PRO_7,
+  // OBJ_PRO_8,
+  // OBJ_PRO_9,
 } from "../variables/OBJECTS";
 
 // Object Arrays
@@ -182,17 +203,40 @@ const BLACKLIGHT_OBJS = [
   OBJ_BL_19,
   OBJ_BL_20,
 ];
-const PROJECTION_OBJS = [
-  OBJ_PRO_1,
-  OBJ_PRO_2,
-  OBJ_PRO_3,
-  OBJ_PRO_4,
-  OBJ_PRO_5,
-  OBJ_PRO_6,
-  OBJ_PRO_7,
-  OBJ_PRO_8,
-  OBJ_PRO_9,
+const BOUDOIR_OBJS = [
+  OBJ_BOUD_1,
+  OBJ_BOUD_2,
+  OBJ_BOUD_3,
+  OBJ_BOUD_4,
+  OBJ_BOUD_5,
+  OBJ_BOUD_6,
+  OBJ_BOUD_7,
+  OBJ_BOUD_8,
+  OBJ_BOUD_9,
+  OBJ_BOUD_10,
+  OBJ_BOUD_11,
+  OBJ_BOUD_12,
+  OBJ_BOUD_13,
+  OBJ_BOUD_14,
+  OBJ_BOUD_15,
+  OBJ_BOUD_16,
+  OBJ_BOUD_17,
+  OBJ_BOUD_18,
+  OBJ_BOUD_19,
+  OBJ_BOUD_20,
+  OBJ_BOUD_21,
 ];
+// const PROJECTION_OBJS = [
+//   OBJ_PRO_1,
+//   OBJ_PRO_2,
+//   OBJ_PRO_3,
+//   OBJ_PRO_4,
+//   OBJ_PRO_5,
+//   OBJ_PRO_6,
+//   OBJ_PRO_7,
+//   OBJ_PRO_8,
+//   OBJ_PRO_9,
+// ];
 
 // Fades
 const FADES = [FADE_IN, FADE_LEFT, FADE_RIGHT];
@@ -206,7 +250,7 @@ const INDEX_KWS = [
   "rtsyvisual",
   "rtsyvisuals",
 ];
-const STORE_KWS = ["store page", "store", "products page", "products"];
+// const STORE_KWS = ["store page", "store", "products page", "products"];
 const SERVICES_KWS = ["services page", "service page", "service", "services"];
 const PORTRAIT_KWS = ["portraits", "portrait"];
 const BLACKLIGHT_KWS = [
@@ -215,7 +259,8 @@ const BLACKLIGHT_KWS = [
   "black light",
   "black lights",
 ];
-const PROJECTION_KWS = ["projections", "projection"];
+const BOUDOIR_KWS = ["boudoirs", "boudoir"];
+// const PROJECTION_KWS = ["projections", "projection"];
 const INFO_KWS = [
   "about me",
   "about rick",
@@ -227,6 +272,7 @@ const INFO_KWS = [
   "background",
 ];
 const CONTACT_KWS = [
+  "contact",
   "contact page",
   "contact me",
   "reaching out to me",
@@ -244,14 +290,16 @@ const PORTFOLIO_KWS = [
 
 export {
   INDEX_KWS,
-  STORE_KWS,
+  // STORE_KWS,
   SERVICES_KWS,
   PORTFOLIO_KWS,
   PORTRAIT_KWS,
   BLACKLIGHT_KWS,
-  PROJECTION_KWS,
+  BOUDOIR_KWS,
+  // PROJECTION_KWS,
   INFO_KWS,
   CONTACT_KWS,
 };
 export { FADES };
-export { PORTRAIT_OBJS, BLACKLIGHT_OBJS, PROJECTION_OBJS };
+export { PORTRAIT_OBJS, BLACKLIGHT_OBJS };
+// export { PORTRAIT_OBJS, BLACKLIGHT_OBJS, PROJECTION_OBJS };
