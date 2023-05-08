@@ -84,15 +84,36 @@ import {
   BG_PORTRAIT_60,
   BG_PORTRAIT_61,
   BG_PORTRAIT_62,
-  BG_PROJECTION_1,
-  BG_PROJECTION_2,
-  BG_PROJECTION_3,
-  BG_PROJECTION_4,
-  BG_PROJECTION_5,
-  BG_PROJECTION_6,
-  BG_PROJECTION_7,
-  BG_PROJECTION_8,
-  BG_PROJECTION_9,
+  BG_BOUDOIR_1,
+  BG_BOUDOIR_2,
+  BG_BOUDOIR_3,
+  BG_BOUDOIR_4,
+  BG_BOUDOIR_5,
+  BG_BOUDOIR_6,
+  BG_BOUDOIR_7,
+  BG_BOUDOIR_8,
+  BG_BOUDOIR_9,
+  BG_BOUDOIR_10,
+  BG_BOUDOIR_11,
+  BG_BOUDOIR_12,
+  BG_BOUDOIR_13,
+  BG_BOUDOIR_14,
+  BG_BOUDOIR_15,
+  BG_BOUDOIR_16,
+  BG_BOUDOIR_17,
+  BG_BOUDOIR_18,
+  BG_BOUDOIR_19,
+  BG_BOUDOIR_20,
+  BG_BOUDOIR_21,
+  // BG_PROJECTION_1,
+  // BG_PROJECTION_2,
+  // BG_PROJECTION_3,
+  // BG_PROJECTION_4,
+  // BG_PROJECTION_5,
+  // BG_PROJECTION_6,
+  // BG_PROJECTION_7,
+  // BG_PROJECTION_8,
+  // BG_PROJECTION_9,
 } from "../../cdns/CDNBgs";
 
 const OBJ_BL_1 = new PortfolioItem("Blacklight", BG_BLACKLIGHT_1);
@@ -179,15 +200,37 @@ const OBJ_PORT_60 = new PortfolioItem("Portrait", BG_PORTRAIT_60);
 const OBJ_PORT_61 = new PortfolioItem("Portrait", BG_PORTRAIT_61);
 const OBJ_PORT_62 = new PortfolioItem("Portrait", BG_PORTRAIT_62);
 
-const OBJ_PRO_1 = new PortfolioItem("Projection", BG_PROJECTION_1);
-const OBJ_PRO_2 = new PortfolioItem("Projection", BG_PROJECTION_2);
-const OBJ_PRO_3 = new PortfolioItem("Projection", BG_PROJECTION_3);
-const OBJ_PRO_4 = new PortfolioItem("Projection", BG_PROJECTION_4);
-const OBJ_PRO_5 = new PortfolioItem("Projection", BG_PROJECTION_5);
-const OBJ_PRO_6 = new PortfolioItem("Projection", BG_PROJECTION_6);
-const OBJ_PRO_7 = new PortfolioItem("Projection", BG_PROJECTION_7);
-const OBJ_PRO_8 = new PortfolioItem("Projection", BG_PROJECTION_8);
-const OBJ_PRO_9 = new PortfolioItem("Projection", BG_PROJECTION_9);
+const OBJ_BOUD_1 = new PortfolioItem("Boudoir", BG_BOUDOIR_1);
+const OBJ_BOUD_2 = new PortfolioItem("Boudoir", BG_BOUDOIR_2);
+const OBJ_BOUD_3 = new PortfolioItem("Boudoir", BG_BOUDOIR_3);
+const OBJ_BOUD_4 = new PortfolioItem("Boudoir", BG_BOUDOIR_4);
+const OBJ_BOUD_5 = new PortfolioItem("Boudoir", BG_BOUDOIR_5);
+const OBJ_BOUD_6 = new PortfolioItem("Boudoir", BG_BOUDOIR_6);
+const OBJ_BOUD_7 = new PortfolioItem("Boudoir", BG_BOUDOIR_7);
+const OBJ_BOUD_8 = new PortfolioItem("Boudoir", BG_BOUDOIR_8);
+const OBJ_BOUD_9 = new PortfolioItem("Boudoir", BG_BOUDOIR_9);
+const OBJ_BOUD_10 = new PortfolioItem("Boudoir", BG_BOUDOIR_10);
+const OBJ_BOUD_11 = new PortfolioItem("Boudoir", BG_BOUDOIR_11);
+const OBJ_BOUD_12 = new PortfolioItem("Boudoir", BG_BOUDOIR_12);
+const OBJ_BOUD_13 = new PortfolioItem("Boudoir", BG_BOUDOIR_13);
+const OBJ_BOUD_14 = new PortfolioItem("Boudoir", BG_BOUDOIR_14);
+const OBJ_BOUD_15 = new PortfolioItem("Boudoir", BG_BOUDOIR_15);
+const OBJ_BOUD_16 = new PortfolioItem("Boudoir", BG_BOUDOIR_16);
+const OBJ_BOUD_17 = new PortfolioItem("Boudoir", BG_BOUDOIR_17);
+const OBJ_BOUD_18 = new PortfolioItem("Boudoir", BG_BOUDOIR_18);
+const OBJ_BOUD_19 = new PortfolioItem("Boudoir", BG_BOUDOIR_19);
+const OBJ_BOUD_20 = new PortfolioItem("Boudoir", BG_BOUDOIR_20);
+const OBJ_BOUD_21 = new PortfolioItem("Boudoir", BG_BOUDOIR_21);
+
+// const OBJ_PRO_1 = new PortfolioItem("Projection", BG_PROJECTION_1);
+// const OBJ_PRO_2 = new PortfolioItem("Projection", BG_PROJECTION_2);
+// const OBJ_PRO_3 = new PortfolioItem("Projection", BG_PROJECTION_3);
+// const OBJ_PRO_4 = new PortfolioItem("Projection", BG_PROJECTION_4);
+// const OBJ_PRO_5 = new PortfolioItem("Projection", BG_PROJECTION_5);
+// const OBJ_PRO_6 = new PortfolioItem("Projection", BG_PROJECTION_6);
+// const OBJ_PRO_7 = new PortfolioItem("Projection", BG_PROJECTION_7);
+// const OBJ_PRO_8 = new PortfolioItem("Projection", BG_PROJECTION_8);
+// const OBJ_PRO_9 = new PortfolioItem("Projection", BG_PROJECTION_9);
 
 export {
   OBJ_BL_1,
@@ -276,13 +319,36 @@ export {
   OBJ_PORT_62,
 };
 export {
-  OBJ_PRO_1,
-  OBJ_PRO_2,
-  OBJ_PRO_3,
-  OBJ_PRO_4,
-  OBJ_PRO_5,
-  OBJ_PRO_6,
-  OBJ_PRO_7,
-  OBJ_PRO_8,
-  OBJ_PRO_9,
+  OBJ_BOUD_1,
+  OBJ_BOUD_2,
+  OBJ_BOUD_3,
+  OBJ_BOUD_4,
+  OBJ_BOUD_5,
+  OBJ_BOUD_6,
+  OBJ_BOUD_7,
+  OBJ_BOUD_8,
+  OBJ_BOUD_9,
+  OBJ_BOUD_10,
+  OBJ_BOUD_11,
+  OBJ_BOUD_12,
+  OBJ_BOUD_13,
+  OBJ_BOUD_14,
+  OBJ_BOUD_15,
+  OBJ_BOUD_16,
+  OBJ_BOUD_17,
+  OBJ_BOUD_18,
+  OBJ_BOUD_19,
+  OBJ_BOUD_20,
+  OBJ_BOUD_21,
 };
+// export {
+//   OBJ_PRO_1,
+//   OBJ_PRO_2,
+//   OBJ_PRO_3,
+//   OBJ_PRO_4,
+//   OBJ_PRO_5,
+//   OBJ_PRO_6,
+//   OBJ_PRO_7,
+//   OBJ_PRO_8,
+//   OBJ_PRO_9,
+// };
