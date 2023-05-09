@@ -37,4 +37,16 @@ const FADE_RIGHT = {
   },
 };
 
-export { FADE_IN, FADE_LEFT, FADE_RIGHT };
+const FADE_DOWN = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 },
+  },
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+};
+
+export { FADE_IN, FADE_LEFT, FADE_RIGHT, FADE_DOWN };
