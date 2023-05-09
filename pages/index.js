@@ -15,6 +15,7 @@ import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMe
 import { Search } from "@/assets/components/global/Nav/Both/Search";
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexInfo } from "@/assets/components/pages/Index/IndexInfo";
+import { IndexWork } from "@/assets/components/pages/Index/IndexWork";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
@@ -39,6 +40,7 @@ export default function Home() {
       <main id="PAGE_CNT" className="page-cnt">
         <IndexTop />
         <IndexInfo />
+        <IndexWork />
       </main>
     </div>
   );
