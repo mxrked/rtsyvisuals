@@ -5,6 +5,9 @@
   .fade-right-fix {
     transform: translateX(0) !important;
   }
+  .fade-down-fix {
+    transform: translateY(0) !important;
+  }
 }
 @media all and (max-width: 991px) {
   .fade-left-fix {
@@ -12,6 +15,9 @@
   }
   .fade-right-fix {
     transform: translateX(0) !important;
+  }
+  .fade-down-fix {
+    transform: translateY(0) !important;
   }
 }
 @media all and (max-width: 768px) {
