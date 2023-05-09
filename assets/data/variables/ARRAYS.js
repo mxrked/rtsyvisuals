@@ -1,6 +1,11 @@
 // This file is used to hold some arrays
 
-import { FADE_IN, FADE_LEFT, FADE_RIGHT } from "@/assets/animations/FADES";
+import {
+  FADE_IN,
+  FADE_LEFT,
+  FADE_RIGHT,
+  FADE_DOWN,
+} from "@/assets/animations/FADES";
 import {
   OBJ_BL_1,
   OBJ_BL_10,
@@ -239,7 +244,7 @@ const BOUDOIR_OBJS = [
 // ];
 
 // Fades
-const FADES = [FADE_IN, FADE_LEFT, FADE_RIGHT];
+const FADES = [FADE_IN, FADE_LEFT, FADE_RIGHT, "", FADE_DOWN];
 
 // Keywords
 const INDEX_KWS = [
