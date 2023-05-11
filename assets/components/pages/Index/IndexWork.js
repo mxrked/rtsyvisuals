@@ -23,16 +23,18 @@ import {
   OBJ_BOUD_13,
 } from "@/assets/data/variables/OBJECTS";
 import { FADES } from "@/assets/data/variables/ARRAYS";
+import { FADE_IN } from "@/assets/animations/FADES";
+
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
 import RemoveStorageVariable from "@/assets/functions/data/storage/RemoveStorageVariable";
+import DisplayWorkModal from "@/assets/functions/dom/displays/DisplayWorkModal";
 
 import { BackgroundImage } from "react-image-and-background-image-fade";
 
 import styles from "../../../styles/modules/Index/Index.module.css";
-import DisplayWorkModal from "@/assets/functions/dom/displays/DisplayWorkModal";
 
 export const IndexWork = () => {
-  const [isMobile, setIsMobile] = useState(false); // This is used to indicate if the variant needs to be changed
+  // const [isMobile, setIsMobile] = useState(false); // This is used to indicate if the variant needs to be changed
 
   const router = useRouter();
 
@@ -44,17 +46,17 @@ export const IndexWork = () => {
   }, [CONTROLS, INVIEW]);
 
   //! Changing Variant based on device size
-  useEffect(() => {
-    // Fade In
-    if (window.innerWidth <= 1024) {
-      setIsMobile(true);
-    }
+  // useEffect(() => {
+  //   // Fade In
+  //   if (window.innerWidth <= 1024) {
+  //     setIsMobile(true);
+  //   }
 
-    // Fade Up
-    if (window.innerWidth > 1024) {
-      setIsMobile(false);
-    }
-  }, [router]);
+  //   // Fade Up
+  //   if (window.innerWidth > 1024) {
+  //     setIsMobile(false);
+  //   }
+  // }, [router]);
 
   return (
     <section
@@ -92,13 +94,14 @@ export const IndexWork = () => {
       </div>
 
       <motion.div
-        className={`${styles.motion} fm-motion fade-down-fix full-second fade-in`}
+        className={`${styles.motion} fm-motion full-second fade-in`}
         ref={REF}
         initial="hidden"
         animate={CONTROLS}
         // isMobile = true - Fade In
         // isMobile = false - Fade Down
-        variants={isMobile ? FADES[0] : FADES[4]}
+        // variants={isMobile ? FADES[0] : FADES[4]}
+        variants={FADE_IN}
       >
         <div className={`${styles.index_work_inner}`}>
           <div className={`${styles.index_work_inner_top}`}>

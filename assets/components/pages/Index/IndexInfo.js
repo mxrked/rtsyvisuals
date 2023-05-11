@@ -14,6 +14,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { BG_GRAYSCALE_CAMERA } from "@/assets/cdns/CDNBgs";
 
 import { FADES } from "@/assets/data/variables/ARRAYS";
+import { FADE_IN } from "@/assets/animations/FADES";
 import TriggerInViewMotion from "@/assets/functions/dom/triggers/TriggerInViewMotion";
 
 import { BackgroundImage } from "react-image-and-background-image-fade";
@@ -21,7 +22,7 @@ import { BackgroundImage } from "react-image-and-background-image-fade";
 import styles from "../../../styles/modules/Index/Index.module.css";
 
 export const IndexInfo = () => {
-  const [isMobile, setIsMobile] = useState(false); // This is used to indicate if the variant needs to be changed
+  // const [isMobile, setIsMobile] = useState(false); // This is used to indicate if the variant needs to be changed
 
   const router = useRouter();
 
@@ -33,33 +34,43 @@ export const IndexInfo = () => {
   }, [CONTROLS, INVIEW]);
 
   //! Changing Variant based on device size
-  useEffect(() => {
-    // Fade In
-    if (window.innerWidth <= 1024) {
-      setIsMobile(true);
-    }
+  // useEffect(() => {
+  //   // Fade In
+  //   if (window.innerWidth <= 1024) {
+  //     setIsMobile(true);
+  //   }
 
-    // Fade Up
-    if (window.innerWidth > 1024) {
-      setIsMobile(false);
-    }
-  }, [router]);
+  //   // Fade Up
+  //   if (window.innerWidth > 1024) {
+  //     setIsMobile(false);
+  //   }
+  // }, [router]);
 
   return (
     <section
       id="indexInfo"
       className={`${styles.index_info} ovderride_IndexInfo`}
     >
-      <div className={`${styles.index_info_box} container-fluid`}>
+      <motion.div
+        className={`${styles.index_info_box} ${styles.motion} container-fluid`}
+        ref={REF}
+        initial="hidden"
+        animate={CONTROLS}
+        // isMobile = true - Fade In
+        // isMobile = false - Fade Left
+        // variants={isMobile ? FADES[0] : FADES[1]}
+        variants={FADE_IN}
+      >
         <div className={`${styles.index_info_row} row`}>
-          <motion.div
-            className={`${styles.index_info_side} ${styles.index_info_L} ${styles.motion} fm-motion fade-right-fix fade-in col-lg-5 col-md-5 col-sm-5 col-xs-5`}
-            ref={REF}
-            initial="hidden"
-            animate={CONTROLS}
+          <div
+            className={`${styles.index_info_side} ${styles.index_info_L} col-lg-5 col-md-5 col-sm-5 col-xs-5`}
+            // ref={REF}
+            // initial="hidden"
+            // animate={CONTROLS}
             // isMobile = true - Fade In
             // isMobile = false - Fade Right
-            variants={isMobile ? FADES[0] : FADES[2]}
+            // variants={isMobile ? FADES[0] : FADES[2]}
+            // variants={FADE_IN}
           >
             <BackgroundImage
               src={BG_GRAYSCALE_CAMERA}
@@ -68,15 +79,16 @@ export const IndexInfo = () => {
               height="100%"
               aria-label="Background image of a grayscale photography camera."
             />
-          </motion.div>
-          <motion.div
-            className={`${styles.index_info_side} ${styles.index_info_R} ${styles.motion} fm-motion fade-left-fix fade-in col-lg-7 col-md-7 col-sm-7 col-xs-7`}
-            ref={REF}
-            initial="hidden"
-            animate={CONTROLS}
+          </div>
+          <div
+            className={`${styles.index_info_side} ${styles.index_info_R} col-lg-7 col-md-7 col-sm-7 col-xs-7`}
+            // ref={REF}
+            // initial="hidden"
+            // animate={CONTROLS}
             // isMobile = true - Fade In
             // isMobile = false - Fade Left
-            variants={isMobile ? FADES[0] : FADES[1]}
+            // variants={isMobile ? FADES[0] : FADES[1]}
+            // variants={FADE_IN}
           >
             <div className={`${styles.index_info_side_cnt}`}>
               <h1 className="half-second">What Makes Me Rtsy?</h1>
@@ -118,9 +130,9 @@ export const IndexInfo = () => {
               </div>
               <span className="half-second">Reaching out to me</span>
             </div>
-          </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
