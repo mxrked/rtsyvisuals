@@ -16,6 +16,7 @@ import { Search } from "@/assets/components/global/Nav/Both/Search";
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexInfo } from "@/assets/components/pages/Index/IndexInfo";
 import { IndexWork } from "@/assets/components/pages/Index/IndexWork";
+import { IndexServices } from "@/assets/components/pages/Index/IndexServices";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
@@ -41,6 +42,7 @@ export default function Home() {
         <IndexTop />
         <IndexInfo />
         <IndexWork />
+        <IndexServices />
       </main>
     </div>
   );
