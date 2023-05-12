@@ -1,4 +1,5 @@
 const isProd = process.env.NODE_ENV === "production";
+const fs = require("fs-extra");
 
 module.exports = {
   reactStrictMode: true,
@@ -15,4 +16,8 @@ module.exports = {
   //! CSS and JS with the trailingSlash
   assetPrefix: isProd ? "https://legendary-cajeta-7dc787.netlify.app/" : "",
   trailingSlash: true,
+
+  async afterBuild({ utils }) {
+    await fs.copy("_headers", ".next/_headers");
+  },
 };
