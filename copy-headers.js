@@ -1,3 +1,5 @@
+// This is used to force the _headers file to be added to .next
+
 const fs = require("fs-extra");
 
 async function copyHeaders() {
