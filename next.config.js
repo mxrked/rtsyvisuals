@@ -17,6 +17,7 @@ module.exports = {
   assetPrefix: isProd ? "https://legendary-cajeta-7dc787.netlify.app/" : "",
   trailingSlash: true,
 
+  // This adds the _headers file after npm run build
   async afterBuild({ utils }) {
     await fs.copy("_headers", ".next/_headers");
   },
