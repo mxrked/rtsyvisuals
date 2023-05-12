@@ -5,7 +5,7 @@
   "homepage": "https://legendary-cajeta-7dc787.netlify.app/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && xcopy _headers .next/",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
