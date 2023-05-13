@@ -94,18 +94,25 @@ function MyApp({ Component, pageProps }) {
   //? DATA
   //! Session/Local Storage Clearing
   useEffect(() => {
-    RemoveStorageVariable("local", "ally-supports-cache");
-    RemoveStorageVariable("session", "Search Opened");
-    RemoveStorageVariable("session", "Mobile Nav Opened");
-    RemoveStorageVariable("session", "HREF");
-    RemoveStorageVariable("session", "FM Loaded");
-
-    // This will allow the modal to stay opened and prevents user from interacting
-    if (!window.location.hash) {
-      RemoveStorageVariable("session", "Modal Opened");
+    if (!sessionStorage.getItem("EA Fix")) {
+      DeclareStorageVariable("session", "EA Fix", true);
+      router.reload();
     }
 
-    RemoveStorageVariable("session", "Page Reload");
+    if (sessionStorage.getItem("EA Fix")) {
+      RemoveStorageVariable("local", "ally-supports-cache");
+      RemoveStorageVariable("session", "Search Opened");
+      RemoveStorageVariable("session", "Mobile Nav Opened");
+      RemoveStorageVariable("session", "HREF");
+      RemoveStorageVariable("session", "FM Loaded");
+
+      // This will allow the modal to stay opened and prevents user from interacting
+      if (!window.location.hash) {
+        RemoveStorageVariable("session", "Modal Opened");
+      }
+
+      RemoveStorageVariable("session", "Page Reload");
+    }
   }, [router]);
 
   //! Adding value after framer motion content has loaded
