@@ -519,14 +519,16 @@
 
 @media all and (max-width: 991px) {
   .index_top {
-    height: 800px;
+    height: 680px;
 
     .bg {
-      height: 800px !important;
+      height: 680px !important;
     }
 
     .overlay {
       .overlay_cnt {
+        top: -10px;
+
         h1 {
           font-size: 40px;
         }

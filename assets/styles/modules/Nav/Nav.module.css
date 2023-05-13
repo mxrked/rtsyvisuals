@@ -22,11 +22,13 @@
   z-index: 600;
 }
 .desktop_nav .desktop_nav_inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.desktop_nav .desktop_nav_inner .desktop_nav_inner_box {
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_inner_side {
   height: 120px;

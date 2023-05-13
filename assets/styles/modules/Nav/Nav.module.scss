@@ -30,12 +30,13 @@
   z-index: 600;
 
   .desktop_nav_inner {
-    max-width: 1500px;
-    @include quickCenter("relative");
     padding-left: 20px;
     padding-right: 20px;
 
     .desktop_nav_inner_box {
+      max-width: 1500px;
+      @include quickCenter("relative");
+
       .desktop_nav_inner_row {
         .desktop_nav_inner_side {
           height: 120px;

@@ -1,3 +1,24 @@
+.overrides_Services,
+.overrides_Portfolio,
+.overrides_Info,
+.overrides_Contact {
+  .desktop-nav {
+    position: relative;
+
+    .fm-motion {
+      background-color: #1e2022 !important;
+    }
+  }
+
+  .mobile-nav {
+    position: relative;
+
+    .fm-motion {
+      background-color: #1e2022 !important;
+    }
+  }
+}
+
 // Responsive
 @media all and (max-width: 1995px) {
   .fade-left-fix {

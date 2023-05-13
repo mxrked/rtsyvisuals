@@ -1,3 +1,28 @@
+.overrides_Services .desktop-nav,
+.overrides_Portfolio .desktop-nav,
+.overrides_Info .desktop-nav,
+.overrides_Contact .desktop-nav {
+  position: relative;
+}
+.overrides_Services .desktop-nav .fm-motion,
+.overrides_Portfolio .desktop-nav .fm-motion,
+.overrides_Info .desktop-nav .fm-motion,
+.overrides_Contact .desktop-nav .fm-motion {
+  background-color: #1e2022 !important;
+}
+.overrides_Services .mobile-nav,
+.overrides_Portfolio .mobile-nav,
+.overrides_Info .mobile-nav,
+.overrides_Contact .mobile-nav {
+  position: relative;
+}
+.overrides_Services .mobile-nav .fm-motion,
+.overrides_Portfolio .mobile-nav .fm-motion,
+.overrides_Info .mobile-nav .fm-motion,
+.overrides_Contact .mobile-nav .fm-motion {
+  background-color: #1e2022 !important;
+}
+
 @media all and (max-width: 1995px) {
   .fade-left-fix {
     transform: translateX(0) !important;

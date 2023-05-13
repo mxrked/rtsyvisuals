@@ -436,10 +436,13 @@
 }
 @media all and (max-width: 991px) {
   .index_top {
-    height: 800px;
+    height: 680px;
   }
   .index_top .bg {
-    height: 800px !important;
+    height: 680px !important;
+  }
+  .index_top .overlay .overlay_cnt {
+    top: -10px;
   }
   .index_top .overlay .overlay_cnt h1 {
     font-size: 40px;
