@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 
 // Data/Functions/Images Imports
 import { TriggerExitAnimations } from "@/assets/functions/dom/triggers/TriggerExitAnimations";
+import ManipPageLink from "@/assets/functions/dom/manip/ManipPageLinks";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/All/PageHead";
@@ -14,6 +15,8 @@ import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 import { Search } from "@/assets/components/global/Nav/Both/Search";
 import { Footer } from "@/assets/components/global/Footer/Footer";
+
+import { PageTop } from "@/assets/components/pages/All/PageTop";
 
 // Style Imports
 import "../assets/styles/modules/Contact/Contact.module.css";
@@ -26,6 +29,11 @@ export default function Contact() {
     TriggerExitAnimations();
   }, []);
 
+  // Disabling Page Links
+  useEffect(() => {
+    ManipPageLink("disable", "multiple", ".contact-link");
+  }, []);
+
   return (
     <div id="PAGE" className="page overrides_Contact">
       <PageHead />
@@ -35,7 +43,9 @@ export default function Contact() {
       <MobileNavMenu />
       <Search />
 
-      <main id="PAGE_CNT" className="page-cnt"></main>
+      <main id="PAGE_CNT" className="page-cnt">
+        <PageTop pageTopH1="Reaching Out To Me." />
+      </main>
 
       <Footer />
     </div>
