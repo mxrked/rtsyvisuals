@@ -1,0 +1,110 @@
+// Imports
+@import "../../tools/mixins/mixins.scss";
+@import "../../tools/themes/themes.scss";
+@import "../../tools/variables/variable.scss";
+
+// Fonts
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../../../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../../../fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  src: url("../../../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../../../fonts/Montserrat-Bold.ttf");
+}
+
+// Desktop
+.page_top {
+  height: 310px;
+  position: relative;
+
+  .bg {
+    height: 310px;
+    width: 100%;
+    filter: brightness(20%);
+    @include bGSU(cover, center);
+  }
+
+  .page_top_div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    color: $WildSand;
+    @include displayElement(flex, center, center);
+    font-family: "Montserrat Bold";
+    font-size: $Heading;
+  }
+}
+
+// Responsive
+@media all and (max-width: 1995px) {
+}
+
+@media all and (max-width: 991px) {
+  .page_top {
+    height: 210px;
+
+    .bg {
+      height: 210px;
+    }
+
+    .page_top_div {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+// Desktop Window (Smallest)
+@media all and (max-width: 768px) {
+  .page_top {
+    height: 140px;
+
+    .bg {
+      height: 140px;
+    }
+
+    .page_top_div {
+      font-size: 32px;
+    }
+  }
+}
+
+// Smaller Devices (Phones)
+@media all and (max-width: 419px) {
+}
+
+// Pixel 2 XL
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+// Ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+// iPad Pro
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+// Laptops
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../../../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../../../fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  src: url("../../../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../../../fonts/Montserrat-Bold.ttf");
+}
+.page_top {
+  height: 310px;
+  position: relative;
+}
+.page_top .bg {
+  height: 310px;
+  width: 100%;
+  filter: brightness(20%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page_top .page_top_div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat Bold";
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+}
+
+@media all and (max-width: 991px) {
+  .page_top {
+    height: 210px;
+  }
+  .page_top .bg {
+    height: 210px;
+  }
+  .page_top .page_top_div {
+    font-size: 40px;
+  }
+}
+@media all and (max-width: 768px) {
+  .page_top {
+    height: 140px;
+  }
+  .page_top .bg {
+    height: 140px;
+  }
+  .page_top .page_top_div {
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=All.module.css.map */
