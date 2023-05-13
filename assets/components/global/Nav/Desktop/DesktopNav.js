@@ -27,10 +27,19 @@ export const DesktopNav = () => {
     TriggerInViewMotion(CONTROLS, INVIEW);
   }, [CONTROLS, INVIEW]);
 
+  // Setting background color of nav for non home page
+  useEffect(() => {
+    setTimeout(() => {
+      if (router.pathname !== "/") {
+        document.getElementById("desktopNav").style.backgroundColor = "#1e2022";
+      }
+    }, 200);
+  }, []);
+
   return (
     <nav id="desktopNav" className={`${styles.desktop_nav} desktop-nav`}>
       <motion.div
-        className={`${styles.motion} fm-motion fade-in full-second`}
+        className={`${styles.motion} desktop-nav-motion fm-motion fade-in full-second`}
         ref={REF}
         initial="hidden"
         animate={CONTROLS}

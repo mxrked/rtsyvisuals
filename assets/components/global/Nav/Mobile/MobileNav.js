@@ -68,6 +68,15 @@ export const MobileNav = () => {
     }
   }, []);
 
+  // Setting background color of nav for non home page
+  useEffect(() => {
+    setTimeout(() => {
+      if (router.pathname !== "/") {
+        document.getElementById("mobileNav").style.backgroundColor = "#1e2022";
+      }
+    }, 200);
+  }, []);
+
   return (
     <nav id="mobileNav" className={`${styles.mobile_nav} mobile-nav`}>
       <motion.div
