@@ -5,6 +5,7 @@
  */
 
 import DeclareStorageVariable from "../../data/storage/DeclareStorageVariable";
+import RemoveStorageVariable from "../../data/storage/RemoveStorageVariable";
 import CloseMobileNav from "../closers/CloseMobileNav";
 import CloseSearch from "../closers/CloseSearch";
 
@@ -29,6 +30,12 @@ function TriggerExitAnimations() {
         document.querySelectorAll(".fm-motion").forEach((fm) => {
           fm.style.opacity = 0;
         });
+
+        // Removing background color of navs
+        document.getElementById("desktopNav").style.backgroundColor =
+          "transparent";
+        document.getElementById("mobileNav").style.backgroundColor =
+          "transparent";
 
         // Route to href value
         setTimeout(() => {
@@ -65,9 +72,16 @@ function TriggerExitAnimations() {
           });
         }, 2320);
 
+        // Removing background color of navs
+        document.getElementById("desktopNav").style.backgroundColor =
+          "transparent";
+        document.getElementById("mobileNav").style.backgroundColor =
+          "transparent";
+
         // Route to href value
         setTimeout(() => {
           window.location.href = sessionStorage.getItem("HREF");
+          RemoveStorageVariable("session", "EA Fix");
         }, 2400);
       });
     }
