@@ -588,7 +588,7 @@
   }
   .index_work {
     margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
   }
   .index_work .work_modal .img_holder {
     max-width: 450px;
@@ -628,7 +628,7 @@
   }
   .index_services {
     margin-top: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
   .index_services .index_services_inner {
     max-width: 450px;
