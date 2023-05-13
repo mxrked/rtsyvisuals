@@ -52,7 +52,7 @@ export const IndexInfo = () => {
       className={`${styles.index_info} ovderride_IndexInfo`}
     >
       <motion.div
-        className={`${styles.index_info_box} ${styles.motion} container-fluid`}
+        className={`${styles.index_info_box} ${styles.motion} fm-motion fade-in full-second container-fluid`}
         ref={REF}
         initial="hidden"
         animate={CONTROLS}
