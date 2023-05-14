@@ -1,0 +1,190 @@
+// Imports
+@import "../../tools/mixins/mixins.scss";
+@import "../../tools/themes/themes.scss";
+@import "../../tools/variables/variable.scss";
+
+// Fonts
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../../../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../../../fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat Semibold";
+  src: url("../../../fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../../../fonts/Montserrat-Bold.ttf");
+}
+
+// Desktop
+.not_found_main {
+  height: 100vh;
+  width: 100%;
+  @include displayElement(flex, center, center);
+  text-align: center;
+  background-color: $WildSand;
+
+  .not_found_main_cnt {
+    h1 {
+      font-family: "Montserrat Bold";
+      font-size: $Heading;
+      color: $ShuttleGray;
+      margin-bottom: 20px;
+      cursor: default;
+    }
+
+    p {
+      font-family: "Montserrat Medium";
+      font-size: 17px;
+      max-width: 550px;
+      line-height: 30px;
+      @include quickCenter("relative");
+      margin-bottom: 30px;
+      cursor: default;
+    }
+
+    a {
+      height: 45px;
+      background-color: $Shark;
+      width: 100%;
+      max-width: 120px;
+      @include displayElement(flex, center, center);
+      font-family: "Montserrat Medium";
+      color: $WildSand;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.072);
+      font-size: 17px;
+      border-radius: 5px;
+      @include quickCenter("relative");
+
+      span {
+        // user-select: none;
+      }
+
+      &:hover {
+        background-color: $ShuttleGray;
+        // color: $Shark;
+      }
+    }
+  }
+}
+
+// Responsive
+@media all and (max-width: 1995px) {
+}
+
+@media all and (max-width: 991px) {
+}
+
+@media (min-width: 992px) {
+}
+
+// Desktop Window (Smallest)
+@media all and (max-width: 768px) {
+  .not_found_main {
+    .not_found_main_cnt {
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        max-width: 80%;
+        font-size: 15px;
+      }
+
+      a {
+        max-width: 90px;
+        width: 90px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// Smaller Devices (Phones)
+@media all and (max-width: 419px) {
+  .not_found_main {
+    .not_found_main_cnt {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        max-width: 80%;
+        font-size: 14px;
+      }
+
+      a {
+        max-width: 90px;
+        width: 90px;
+        height: 40px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+// Pixel 2 XL
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .not_found_main {
+    .not_found_main_cnt {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        max-width: 80%;
+        font-size: 14px;
+      }
+
+      a {
+        max-width: 90px;
+        width: 90px;
+        height: 40px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+// Ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .not_found_main {
+    .not_found_main_cnt {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        max-width: 400px;
+        font-size: 14px;
+      }
+
+      a {
+        max-width: 90px;
+        width: 90px;
+        height: 40px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+// iPad Pro
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+// Laptops
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}
