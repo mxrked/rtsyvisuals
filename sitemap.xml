@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+      <urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+      xmlns:xhtml="http://www.w3.org/1999/xhtml">
+      
+	<url>
+		<loc>rtsyvisuals.com/</loc>
+		<lastmod>2023-05-14</lastmod>
+	</url>
+
+	<url>
+		<loc>rtsyvisuals.com/services</loc>
+		<lastmod>2023-05-14</lastmod>
+	</url>
+
+	<url>
+		<loc>rtsyvisuals.com/portfolio</loc>
+		<lastmod>2023-05-14</lastmod>
+	</url>
+
+	<url>
+		<loc>rtsyvisuals.com/contact</loc>
+		<lastmod>2023-05-14</lastmod>
+	</url>
+
+	<url>
+		<loc>rtsyvisuals.com/info</loc>
+		<lastmod>2023-05-14</lastmod>
+	</url>
+</urlset>
