@@ -282,6 +282,8 @@
   }
   .footer .footer_top .footer_top_inner .footer_top_inner_box .footer_top_inner_row .footer_top_R .footer_top_inner_side_cnt {
     max-width: 210px;
+    display: grid;
+    justify-content: center;
   }
   .footer .footer_top .footer_top_inner .footer_top_inner_box .footer_top_inner_row .footer_top_R .footer_top_inner_side_cnt ul {
     text-align: center;

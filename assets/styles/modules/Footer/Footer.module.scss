@@ -384,6 +384,8 @@
 
               .footer_top_inner_side_cnt {
                 max-width: 210px;
+                display: grid;
+                justify-content: center;
 
                 ul {
                   text-align: center;
