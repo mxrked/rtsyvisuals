@@ -31,42 +31,42 @@ export const MobileNav = () => {
   }, [CONTROLS, INVIEW]);
 
   // Changing Login/Register Link text based on screen size
-  useEffect(() => {
-    const SMALL_SCREEN = "(max-width: 768px)";
+  // useEffect(() => {
+  //   const SMALL_SCREEN = "(max-width: 768px)";
 
-    window.addEventListener("load", () => {
-      Display1Of2("loginRegisterSpan", "loginRegisterIcon", SMALL_SCREEN);
+  //   window.addEventListener("load", () => {
+  //     Display1Of2("loginRegisterSpan", "loginRegisterIcon", SMALL_SCREEN);
 
-      if (window.matchMedia(SMALL_SCREEN).matches) {
-        document.getElementById("mobileLoginRegisterLink").style.width = "35px";
-      } else {
-        document.getElementById("mobileLoginRegisterLink").style.width =
-          "125px";
-      }
-    });
+  //     if (window.matchMedia(SMALL_SCREEN).matches) {
+  //       document.getElementById("mobileLoginRegisterLink").style.width = "35px";
+  //     } else {
+  //       document.getElementById("mobileLoginRegisterLink").style.width =
+  //         "125px";
+  //     }
+  //   });
 
-    window.addEventListener("resize", () => {
-      Display1Of2("loginRegisterSpan", "loginRegisterIcon", SMALL_SCREEN);
+  //   window.addEventListener("resize", () => {
+  //     Display1Of2("loginRegisterSpan", "loginRegisterIcon", SMALL_SCREEN);
 
-      if (window.matchMedia(SMALL_SCREEN).matches) {
-        document.getElementById("mobileLoginRegisterLink").style.width = "35px";
-      } else {
-        document.getElementById("mobileLoginRegisterLink").style.width =
-          "125px";
-      }
-    });
-  }, [router]);
-  useEffect(() => {
-    const SMALL_SCREEN = "(max-width: 768px)";
+  //     if (window.matchMedia(SMALL_SCREEN).matches) {
+  //       document.getElementById("mobileLoginRegisterLink").style.width = "35px";
+  //     } else {
+  //       document.getElementById("mobileLoginRegisterLink").style.width =
+  //         "125px";
+  //     }
+  //   });
+  // }, [router]);
+  // useEffect(() => {
+  //   const SMALL_SCREEN = "(max-width: 768px)";
 
-    Display1Of2("loginRegisterSpan", "loginRegisterIcon", SMALL_SCREEN);
+  //   Display1Of2("loginRegisterSpan", "loginRegisterIcon", SMALL_SCREEN);
 
-    if (window.matchMedia(SMALL_SCREEN).matches) {
-      document.getElementById("mobileLoginRegisterLink").style.width = "35px";
-    } else {
-      document.getElementById("mobileLoginRegisterLink").style.width = "125px";
-    }
-  }, []);
+  //   if (window.matchMedia(SMALL_SCREEN).matches) {
+  //     document.getElementById("mobileLoginRegisterLink").style.width = "35px";
+  //   } else {
+  //     document.getElementById("mobileLoginRegisterLink").style.width = "125px";
+  //   }
+  // }, []);
 
   // Setting background color of nav for non home page
   useEffect(() => {
@@ -108,6 +108,7 @@ export const MobileNav = () => {
                 className={`${styles.mobile_nav_inner_side} ${styles.mobile_nav_R} col-lg-8 col-md-8 col-sm-8 col-xs-8`}
               >
                 <div className={`${styles.mobile_nav_inner_side_cnt}`}>
+                  {/**
                   <button
                     className={`${styles.sign_out} sign-out-btn half-second`}
                   >
@@ -128,6 +129,7 @@ export const MobileNav = () => {
                       <span id="loginRegisterSpan">Login/Register</span>
                     </a>
                   </div>
+                  */}
                   <button
                     className={`${styles.search_toggler} search-toggler half-second`}
                     onClick={() => {

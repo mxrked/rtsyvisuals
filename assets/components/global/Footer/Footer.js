@@ -114,7 +114,8 @@ export const Footer = () => {
                         <span>Contact</span>
                       </a>
                     </li>
-                    <li>
+                    {/**
+                         <li>
                       <a
                         href="/login_register"
                         className="login-register-link half-second"
@@ -122,6 +123,8 @@ export const Footer = () => {
                         <span>Login/Register</span>
                       </a>
                     </li>
+                    */}
+                    <li></li>
                   </ul>
                 </div>
               </div>

@@ -106,7 +106,8 @@ export const DesktopNav = () => {
                     </li>
                   </ul>
 
-                  <button
+                  {/**
+                    <button
                     className={`${styles.sign_out} sign-out-btn half-second`}
                   >
                     <FaSignOutAlt className={`${styles.icon}`} />
@@ -118,6 +119,7 @@ export const DesktopNav = () => {
                       <span>Login/Register</span>
                     </a>
                   </div>
+                  */}
                   <button
                     className={`${styles.search_toggler} search-toggler half-second`}
                     onClick={() => {
