@@ -114,17 +114,12 @@ export const Footer = () => {
                         <span>Contact</span>
                       </a>
                     </li>
-                    {/**
-                         <li>
-                      <a
-                        href="/login_register"
-                        className="login-register-link half-second"
-                      >
-                        <span>Login/Register</span>
+                    {/***/}
+                    <li>
+                      <a href="/sitemap.xml" className="half-second">
+                        <span>Sitemap</span>
                       </a>
                     </li>
-                    */}
-                    <li></li>
                   </ul>
                 </div>
               </div>
