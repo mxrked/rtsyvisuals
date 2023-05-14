@@ -182,7 +182,8 @@ export const PageHead = () => {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_GB" />
       <meta property="og:url" content={url} />
-
+      <meta name="google-site-verification" content="V5Rtva_ZUQGbD75j-mxlBzvediiQnPt2hEi7YaPPAEE" />
+      
       <link rel="canonical" href={url} />
 
       <link
