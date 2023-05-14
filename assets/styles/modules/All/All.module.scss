@@ -85,26 +85,103 @@
 
 // Smaller Devices (Phones)
 @media all and (max-width: 419px) {
+  .page_top {
+    height: 90px;
+
+    .bg {
+      height: 90px;
+    }
+
+    .page_top_div {
+      font-size: 27px;
+    }
+  }
 }
 
 // Pixel 2 XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .page_top {
+    height: 110px;
+
+    .bg {
+      height: 110px;
+    }
+
+    .page_top_div {
+      font-size: 32px;
+    }
+  }
 }
 
 // Ipad
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .page_top {
+    height: 150px;
+
+    .bg {
+      height: 150px;
+    }
+
+    .page_top_div {
+      font-size: 38px;
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .page_top {
+    height: 120px;
+
+    .bg {
+      height: 120px;
+    }
+
+    .page_top_div {
+      font-size: 33px;
+    }
+  }
 }
 
 // iPad Pro
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .page_top {
+    height: 190px;
+
+    .bg {
+      height: 190px;
+    }
+
+    .page_top_div {
+      font-size: 40px;
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .page_top {
+    height: 160px;
+
+    .bg {
+      height: 160px;
+    }
+
+    .page_top_div {
+      font-size: 40px;
+    }
+  }
 }
 
 // Laptops
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .page_top {
+    height: 210px;
+
+    .bg {
+      height: 210px;
+    }
+
+    .page_top_div {
+      font-size: 50px;
+    }
+  }
 }
