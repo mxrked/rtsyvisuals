@@ -63,24 +63,24 @@ export const PageHead = () => {
 
     kws = INDEX_KWS;
   }
-  // Store Page
-  if (router.pathname == "/store") {
-    title = "RTSYVisuals - Store";
-    robots = "index, follow";
-    url = router.pathname;
+  // // Store Page
+  // if (router.pathname == "/store") {
+  //   title = "RTSYVisuals - Store";
+  //   robots = "index, follow";
+  //   url = router.pathname;
 
-    if (STORE_DESC.length > 0) {
-      desc = DESCS[2];
-    } else {
-      desc = DESCS[2];
-    }
+  //   if (STORE_DESC.length > 0) {
+  //     desc = DESCS[2];
+  //   } else {
+  //     desc = DESCS[2];
+  //   }
 
-    if (STORE_KWS.length > 0) {
-      kws = STORE_KWS;
-    } else {
-      kws = "No keywords";
-    }
-  }
+  //   if (STORE_KWS.length > 0) {
+  //     kws = STORE_KWS;
+  //   } else {
+  //     kws = "No keywords";
+  //   }
+  // }
   // Info Page
   if (router.pathname == "/info") {
     title = "RTSYVisuals - Info";
@@ -153,9 +153,17 @@ export const PageHead = () => {
       kws = "No keywords";
     }
   }
-  // Login/Register Page
-  if (router.pathname == "/login_register") {
-    title = "RTSYVisuals - Login/Register";
+  // // Login/Register Page
+  // if (router.pathname == "/login_register") {
+  //   title = "RTSYVisuals - Login/Register";
+  //   robots = "no index, no follow";
+  //   desc = "No description";
+  //   kws = "No keywords";
+  //   url = router.pathname;
+  // }
+  // 404 Page
+  if (router.pathname == "/404") {
+    title = "RTSYVisuals - 404";
     robots = "no index, no follow";
     desc = "No description";
     kws = "No keywords";
