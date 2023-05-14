@@ -44,6 +44,10 @@
     @include displayElement(flex, center, center);
     font-family: "Montserrat Bold";
     font-size: $Heading;
+
+    h1 {
+      cursor: default;
+    }
   }
 }
 

@@ -40,6 +40,9 @@
   font-family: "Montserrat Bold";
   font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
 }
+.page_top .page_top_div h1 {
+  cursor: default;
+}
 
 @media all and (max-width: 991px) {
   .page_top {
