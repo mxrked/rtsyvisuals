@@ -114,12 +114,14 @@ export const Footer = () => {
                         <span>Contact</span>
                       </a>
                     </li>
-                    {/***/}
+                    <li></li>
+                    {/**
                     <li>
                       <a href="/sitemap.xml" className="half-second">
                         <span>Sitemap</span>
                       </a>
                     </li>
+                    */}
                   </ul>
                 </div>
               </div>
