@@ -22,6 +22,189 @@
 }
 
 // Desktop
+.portfolio_top {
+  height: 500px;
+  @include displayElement(flex, center, center);
+  text-align: center;
+  line-height: 30px;
+
+  .portfolio_top_cnt {
+    max-width: 900px;
+    @include quickCenter("relative");
+
+    p {
+      font-family: "Montserrat Medium";
+      font-size: $Text;
+      line-height: 30px;
+      cursor: default;
+    }
+
+    .view_all_btn {
+      background-color: $Shark;
+      color: $WildSand;
+      font-family: "Montserrat Bold";
+      width: 100px;
+      height: 40px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+
+      &:hover {
+        background-color: $ShuttleGray;
+      }
+    }
+
+    .btns {
+      @include displayElement(flex, space-between, center);
+      max-width: 350px;
+      @include quickCenter("relative");
+      position: relative;
+      left: 11px;
+
+      button {
+        background-color: $Shark;
+        color: $WildSand;
+        font-family: "Montserrat Bold";
+        height: 40px;
+        @include displayElement(flex, center, center);
+
+        &:hover {
+          background-color: $ShuttleGray;
+        }
+      }
+
+      .view_portraits_btn {
+        width: 100px;
+      }
+      .view_boudoirs_btn {
+        width: 105px;
+      }
+      .view_blacklights_btn {
+        width: 125px;
+      }
+    }
+  }
+}
+.portfolio_main {
+  margin-top: 60px;
+
+  .work_modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.86);
+    z-index: 550;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    // cursor: pointer;
+
+    .work_modal_closer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 551;
+      cursor: pointer;
+    }
+
+    .img_holder {
+      position: absolute;
+      max-width: 600px;
+      max-height: 600px;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      z-index: 555;
+      transform: translate(-50%, -50%);
+      background-color: rgb(18, 18, 18);
+
+      img {
+        max-width: 600px;
+        max-height: 600px;
+        cursor: default;
+        pointer-events: none;
+        @include quickCenter("relative");
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .portfolio_main_inner {
+    max-width: 1400px;
+    @include quickCenter("relative");
+
+    .portfolio_main_inner_box {
+      background-color: ghostwhite;
+
+      .portfolio_main_inner_row {
+        .portfolio_main_inner_item {
+          background-color: ghostwhite;
+          height: 350px;
+          padding: 0;
+          max-width: 32%;
+          @include quickCenter("relative");
+          margin-bottom: 18px;
+          position: relative;
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.153);
+          border-radius: 15px;
+          overflow: hidden;
+
+          &:hover {
+            .bg {
+              scale: 1.05;
+            }
+
+            .overlay {
+              background-color: rgba(0, 0, 0, 0.7);
+            }
+          }
+
+          .bg {
+            transform: translateZ(0);
+            will-change: transform;
+            @include bGSU(cover, center);
+          }
+
+          .overlay {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            height: 100%;
+            @include displayElement(flex, center, center);
+            color: $WildSand;
+
+            div {
+              display: grid;
+              justify-content: center;
+              font-family: "Montserrat Medium";
+              text-align: center;
+              font-size: $Text;
+
+              .icon {
+                font-size: 50px;
+                position: relative;
+                text-align: center;
+                @include quickCenter("relative");
+                margin-bottom: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {

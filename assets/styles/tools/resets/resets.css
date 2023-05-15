@@ -91,6 +91,10 @@ body {
   background-color: #fafafa;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -165,6 +169,7 @@ select {
 .page {
   opacity: 0;
   visibility: hidden;
+  transition: 1s ease-in-out;
 }
 
 .hide-page {
