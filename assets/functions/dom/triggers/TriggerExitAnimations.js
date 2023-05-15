@@ -26,7 +26,10 @@ function TriggerExitAnimations() {
         document.body.style.overflowY = "hidden";
         document.body.style.pointerEvents = "none";
 
-        // Hiding elements
+        // Hiding elements/page
+        document.querySelector(".page").style.opacity = 0;
+        document.querySelector(".page").style.visibility = "hidden";
+
         document.querySelectorAll(".fm-motion").forEach((fm) => {
           fm.style.opacity = 0;
         });
@@ -66,6 +69,9 @@ function TriggerExitAnimations() {
         }, 2300);
 
         // Hiding elements
+        document.querySelector(".page").style.opacity = 0;
+        document.querySelector(".page").style.visibility = "hidden";
+
         setTimeout(() => {
           document.querySelectorAll(".fm-motion").forEach((fm) => {
             fm.style.opacity = 0;
