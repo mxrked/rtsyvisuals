@@ -185,8 +185,8 @@ const OBJ_PORT_45 = new PortfolioItem("Portrait", BG_PORTRAIT_45);
 const OBJ_PORT_46 = new PortfolioItem("Portrait", BG_PORTRAIT_46);
 const OBJ_PORT_47 = new PortfolioItem("Portrait", BG_PORTRAIT_47);
 const OBJ_PORT_48 = new PortfolioItem("Portrait", BG_PORTRAIT_48);
-const OBJ_PORT_49 = new PortfolioItem("Portrait", BG_PORTRAIT_49);
-const OBJ_PORT_50 = new PortfolioItem("Portrait", BG_PORTRAIT_50);
+// const OBJ_PORT_49 = new PortfolioItem("Portrait", BG_PORTRAIT_49);
+// const OBJ_PORT_50 = new PortfolioItem("Portrait", BG_PORTRAIT_50);
 const OBJ_PORT_51 = new PortfolioItem("Portrait", BG_PORTRAIT_51);
 const OBJ_PORT_52 = new PortfolioItem("Portrait", BG_PORTRAIT_52);
 const OBJ_PORT_53 = new PortfolioItem("Portrait", BG_PORTRAIT_53);
@@ -303,8 +303,8 @@ export {
   OBJ_PORT_46,
   OBJ_PORT_47,
   OBJ_PORT_48,
-  OBJ_PORT_49,
-  OBJ_PORT_50,
+  // OBJ_PORT_49,
+  // OBJ_PORT_50,
   OBJ_PORT_51,
   OBJ_PORT_52,
   OBJ_PORT_53,
