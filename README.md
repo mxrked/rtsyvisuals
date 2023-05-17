@@ -16,7 +16,7 @@ This is Rick Dingwall's Photography website.
 
 ---
 
-Demo: https://legendary-cajeta-7dc787.netlify.app/
+Demo: https://www.rtsyvisuals.com
 
 ===
 
