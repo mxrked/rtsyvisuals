@@ -20,6 +20,8 @@ import { PageTop } from "@/assets/components/pages/All/PageTop";
 
 // Style Imports
 import "../assets/styles/modules/Info/Info.module.css";
+import { InfoTop } from "@/assets/components/pages/Info/InfoTop";
+import { InfoText } from "@/assets/components/pages/Info/InfoText";
 
 export default function Info() {
   const router = useRouter();
@@ -45,6 +47,9 @@ export default function Info() {
 
       <main id="PAGE_CNT" className="page-cnt">
         <PageTop pageTopH1="About Rick Dingwall." />
+
+        <InfoTop />
+        <InfoText />
       </main>
 
       <Footer />
