@@ -106,7 +106,7 @@ export const Search = () => {
           </li> */}
           <li>
             <a
-              href="/services#boudoir"
+              href="/services#boudoirs"
               className="services-link search-link half-second"
             >
               <span>Boudoirs</span>
@@ -114,7 +114,7 @@ export const Search = () => {
           </li>
           <li>
             <a
-              href="/services#blacklight"
+              href="/services#blacklights"
               className="services-link search-link half-second"
             >
               <span>Blacklights</span>
