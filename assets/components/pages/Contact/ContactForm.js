@@ -40,8 +40,9 @@ export const ContactForm = () => {
       >
         <div className={`${styles.contact_form_holder_inner}`}>
           <form
+            noValidate="noValidate"
+            autoComplete={"false"}
             id="contactForm"
-            noValidate
             className={`${styles.contact_form}`}
             onSubmit={(e) => {
               EmailSend(router, e);
@@ -55,6 +56,8 @@ export const ContactForm = () => {
                   name="first_name"
                   className="half-second"
                   placeholder="First Name"
+                  autoComplete={"off"}
+                  role={"presentation"}
                 />
               </div>
               <div className={`${styles.contact_form_set}`}>
@@ -64,6 +67,8 @@ export const ContactForm = () => {
                   name="last_name"
                   className="half-second"
                   placeholder="Last Name"
+                  autoComplete={"off"}
+                  role={"presentation"}
                 />
               </div>
             </div>
@@ -75,6 +80,8 @@ export const ContactForm = () => {
                   name="from_email"
                   className="half-second"
                   placeholder="Email Address"
+                  autoComplete={"off"}
+                  role={"presentation"}
                 />
               </div>
               <div className={`${styles.contact_form_set}`}>
@@ -85,6 +92,8 @@ export const ContactForm = () => {
                     name="phone"
                     className="half-second"
                     placeholder="Phone Number"
+                    autoComplete={"off"}
+                    role={"presentation"}
                   />
                   <span className="half-second">
                     * Add your country code before your full number. (Ex: +1...)
@@ -100,6 +109,8 @@ export const ContactForm = () => {
                   name="subject"
                   className="half-second"
                   placeholder="Subject"
+                  autoComplete={"off"}
+                  role={"presentation"}
                 />
               </div>
             </div>
