@@ -17,6 +17,8 @@ import { Search } from "@/assets/components/global/Nav/Both/Search";
 import { Footer } from "@/assets/components/global/Footer/Footer";
 
 import { PageTop } from "@/assets/components/pages/All/PageTop";
+import { ContactTop } from "@/assets/components/pages/Contact/ContactTop";
+import { ContactForm } from "@/assets/components/pages/Contact/ContactForm";
 
 // Style Imports
 import "../assets/styles/modules/Contact/Contact.module.css";
@@ -45,6 +47,8 @@ export default function Contact() {
 
       <main id="PAGE_CNT" className="page-cnt">
         <PageTop pageTopH1="Reaching Out To Me." />
+        <ContactTop />
+        <ContactForm />
       </main>
 
       <Footer />
