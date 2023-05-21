@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 
 import CheckValidEmail from "./CheckValidEmail";
 import CheckValidPhoneNumber from "./CheckValidPhoneNumber";
+import DeclareStorageVariable from "../storage/DeclareStorageVariable";
 
 const SERVICE_ID = "service_sjf3zeb";
 const TEMPLATE_ID = "template_jcq9isf";
@@ -106,6 +107,8 @@ export default function EmailSend(rooter, formTarget) {
               console.log("Email sent successfully: " + res);
 
               sentSuccess = true;
+
+              DeclareStorageVariable("session", "Submission Sent", true);
 
               setTimeout(() => {
                 if (sentSuccess) {
