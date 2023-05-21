@@ -118,9 +118,14 @@
   margin-right: 8px;
 }
 
+@media all and (max-width: 1995px) {
+  .footer {
+    margin-top: 60px;
+  }
+}
 @media all and (max-width: 991px) {
   .footer {
-    margin-top: 110px;
+    margin-top: 60px;
   }
   .footer .footer_top .footer_top_inner {
     padding: 0;
