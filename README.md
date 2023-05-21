@@ -26,7 +26,7 @@ Demo: https://www.rtsyvisuals.com
 
 ## Started Developement - 5/4/2023
 
-## Ended Development - N/A
+## Ended Development - 5/21/2023
 
 ## Status
 
