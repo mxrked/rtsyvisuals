@@ -26,6 +26,13 @@ export const ContactForm = () => {
     TriggerInViewMotion(CONTROLS, INVIEW);
   }, [CONTROLS, INVIEW]);
 
+  // Displaying success_message if submission was sent
+  useEffect(() => {
+    if (sessionStorage.getItem("Submission Sent")) {
+      document.getElementById("formSentSuccessfully").style.opacity = 1;
+    }
+  }, []);
+
   return (
     <section id="contactFormHolder" className={`${styles.contact_form_holder}`}>
       <motion.div
@@ -39,6 +46,13 @@ export const ContactForm = () => {
         variants={FADE_IN}
       >
         <div className={`${styles.contact_form_holder_inner}`}>
+          <span
+            id="formSentSuccessfully"
+            className={`${styles.success_message}`}
+          >
+            Submission sent!
+          </span>
+
           <form
             noValidate="noValidate"
             autoComplete={"false"}
@@ -86,6 +100,9 @@ export const ContactForm = () => {
               </div>
               <div className={`${styles.contact_form_set}`}>
                 <div>
+                  <span className={`${styles.top_span} half-second`}>
+                    * Add your country code before your full number. (Ex: +1...)
+                  </span>
                   <input
                     type="tel"
                     id="formPhone"
@@ -95,7 +112,7 @@ export const ContactForm = () => {
                     autoComplete={"off"}
                     role={"presentation"}
                   />
-                  <span className="half-second">
+                  <span className={`${styles.bottom_span} half-second`}>
                     * Add your country code before your full number. (Ex: +1...)
                   </span>
                 </div>
@@ -117,6 +134,8 @@ export const ContactForm = () => {
             <div className={`${styles.contact_form_single_group}`}>
               <div className={`${styles.contact_form_set}`}>
                 <textarea
+                  data-gram="false"
+                  data-disable-grammarly="true"
                   id="formMessage"
                   name="message"
                   className="half-second"
