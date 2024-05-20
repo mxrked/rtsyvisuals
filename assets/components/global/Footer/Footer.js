@@ -132,12 +132,14 @@ export const Footer = () => {
 
       <div className={`${styles.footer_bottom}`}>
         <div className={`${styles.footer_bottom_cnt}`}>
-          <FaCopyright className={`${styles.icon} half-second`} />
-
-          <span className="half-second">
-            Copyright 2021 - <span id="currentYear">N/A</span>. All rights
-            reserved.
-          </span>
+          Website created by{" "}
+          <a
+            href="https://dynamicwebtechnologies.com/"
+            target={"_blank"}
+            className="orientation-change-element half-second"
+          >
+            Dynamic Web Technologies
+          </a>
         </div>
       </div>
     </footer>
