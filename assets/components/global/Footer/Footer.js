@@ -131,6 +131,7 @@ export const Footer = () => {
 
       <div className={`${styles.footer_bottom}`}>
         <div className={`${styles.footer_bottom_cnt}`}>
+          Website created by{" "}
           <a
             href="https://dynamicwebtechnologies.com/"
             target={"_blank"}
