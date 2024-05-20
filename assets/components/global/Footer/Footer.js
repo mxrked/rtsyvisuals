@@ -14,9 +14,8 @@ import styles from "../../../styles/modules/Footer/Footer.module.css";
 export const Footer = () => {
   // Adding current year to copyright
   useEffect(() => {
-    const CURRENT_YEAR = new Date().getFullYear();
-
-    document.getElementById("currentYear").innerHTML = CURRENT_YEAR;
+    // const CURRENT_YEAR = new Date().getFullYear();
+    // document.getElementById("currentYear").innerHTML = CURRENT_YEAR;
   }, []);
 
   return (
@@ -132,7 +131,6 @@ export const Footer = () => {
 
       <div className={`${styles.footer_bottom}`}>
         <div className={`${styles.footer_bottom_cnt}`}>
-          Website created by{" "}
           <a
             href="https://dynamicwebtechnologies.com/"
             target={"_blank"}
